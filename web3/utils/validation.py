@@ -145,7 +145,7 @@ def validate_address(value):
     if not isinstance(value, str):
         raise TypeError('Address {} must be provided as a string'.format(value))
     if not is_hex_address(value):
-        raise InvalidAddress("Address must be 20 bytes, as a hex string with a 0x prefix", value)
+        raise InvalidAddress("Address must be 32 bytes, as a hex string with a 0x prefix", value)
     if not is_checksum_address(value):
         if value == value.lower():
             raise InvalidAddress(
