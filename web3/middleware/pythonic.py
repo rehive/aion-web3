@@ -160,7 +160,7 @@ BLOCK_FORMATTERS = {
     'logsBloom': to_hexbytes(256),
     'miner': apply_formatter_if(is_not_null, to_checksum_address),
     'mixHash': to_hexbytes(32),
-    'nonce': apply_formatter_if(is_not_null, to_hexbytes(8, variable_length=True)),
+    'nonce': apply_formatter_if(is_not_null, to_hexbytes(32, variable_length=True)),
     'number': apply_formatter_if(is_not_null, to_integer_if_hex),
     'parentHash': apply_formatter_if(is_not_null, to_hexbytes(32)),
     'sha3Uncles': apply_formatter_if(is_not_null, to_hexbytes(32)),
