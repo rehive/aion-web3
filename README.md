@@ -4,8 +4,6 @@ This is a fork of the original Ethereum web3.py libraries with changes specific 
 
 * Python 3.5+ support
 
-Read more in the [documentation on ReadTheDocs](http://web3py.readthedocs.io/). [View the change log on Github](docs/releases.rst).
-
 
 ### Testing Setup
 
